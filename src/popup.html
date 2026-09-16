@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Accent Letters: Copy &amp; Paste</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <img src="icons/icon-48.png" width="36" height="36" alt="" />
+      <div>
+        <p class="brand">Diacritical Marks</p>
+        <h1>Accent letters</h1>
+      </div>
+    </header>
+
+    <main>
+      <p class="instruction">Choose a letter, then select a character to copy it.</p>
+
+      <nav class="letter-nav" aria-label="Choose a base letter">
+        <div id="letter-tabs" class="letter-tabs" role="tablist" aria-label="A to Z"></div>
+      </nav>
+
+      <section id="letter-panel" class="letter-panel" role="tabpanel" aria-labelledby="panel-title">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Selected letter</p>
+            <h2 id="panel-title">A with accents</h2>
+          </div>
+          <p id="character-count" class="count"></p>
+        </div>
+
+        <div id="character-groups"></div>
+      </section>
+    </main>
+
+    <div id="copy-status" class="copy-status" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <footer>
+      <a id="letter-reference" href="https://diacriticalmarks.com/letters/a-with-accent/" target="_blank" rel="noopener noreferrer">Full A reference</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://diacriticalmarks.com/accent-letters/" target="_blank" rel="noopener noreferrer">All accent letters</a>
+      <p>Works locally. Nothing is collected or transmitted.</p>
+    </footer>
+
+    <noscript>This extension requires JavaScript to display its character buttons.</noscript>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

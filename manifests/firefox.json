@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Accent Letters: Copy & Paste",
+  "short_name": "Accents",
+  "version": "1.0.0",
+  "description": "Copy accented A to Z Latin letters with one click. Private, fast and available offline.",
+  "homepage_url": "https://diacriticalmarks.com/accent-letters/",
+  "action": {
+    "default_title": "Accent Letters: Copy & Paste",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "accent-letters@diacriticalmarks.com",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  }
+}

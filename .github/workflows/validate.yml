@@ -1,0 +1,42 @@
+name: Validate
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  extension:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install browser engines
+        run: npx playwright install --with-deps chromium firefox
+
+      - name: Validate extension and Chromium
+        run: npm run validate
+
+      - name: Validate Firefox interaction
+        run: npm run test:firefox
+
+      - name: Preserve store packages and artwork
+        uses: actions/upload-artifact@v4
+        with:
+          name: accent-letters-copy-${{ github.sha }}
+          path: |
+            dist/
+            store/assets/

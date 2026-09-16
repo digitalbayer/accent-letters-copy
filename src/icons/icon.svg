@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Diacritical Marks accent letter icon</title>
+  <rect width="128" height="128" rx="24" fill="#17382f"/>
+  <path d="M76 19 91 7l8 11-18 9z" fill="#d6a24a"/>
+  <text x="64" y="96" text-anchor="middle" font-family="Georgia,serif" font-size="88" font-weight="700" fill="#f8f7f1">A</text>
+  <circle cx="101" cy="101" r="8" fill="#d6a24a"/>
+</svg>
+

@@ -1,0 +1,7 @@
+node_modules/
+build/
+dist/
+test-results/
+playwright-report/
+.DS_Store
+vendor/UnicodeData-17.0.0.txt
